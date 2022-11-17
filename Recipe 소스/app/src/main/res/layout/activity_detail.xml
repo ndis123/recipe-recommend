@@ -1,0 +1,215 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <Button
+            android:layout_width="20dp" android:id="@+id/back"
+            android:layout_height="20dp"
+            android:background="@drawable/back"></Button>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="레시피 상세"
+            android:textColor="#ffffff"
+            android:textSize="20dp"></TextView>
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp" android:background="#f6f6f6"
+        android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent" android:layout_marginTop="10dp" android:orientation="vertical"
+            android:layout_height="match_parent" android:paddingLeft="15dp" android:paddingRight="15dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical"
+
+                android:text="레시피명"
+                android:textColor="#000000"
+                android:textSize="15dp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent" android:background="@drawable/border"
+                android:layout_height="wrap_content" android:id="@+id/title" android:padding="10dp"
+                android:gravity="center_vertical"
+
+
+                android:textColor="#444444"
+                android:textSize="14dp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical" android:layout_marginTop="10dp"
+
+                android:text="요리종류"
+                android:textColor="#000000"
+                android:textSize="15dp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent" android:background="@drawable/border"
+                android:layout_height="wrap_content" android:id="@+id/type" android:padding="10dp"
+                android:gravity="center_vertical"
+
+
+                android:textColor="#444444"
+                android:textSize="14dp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical" android:layout_marginTop="10dp"
+
+                android:text="요리설명"
+                android:textColor="#000000"
+                android:textSize="15dp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent" android:background="@drawable/border"
+                android:layout_height="wrap_content" android:id="@+id/contents" android:padding="10dp"
+                android:gravity="center_vertical"
+
+
+                android:textColor="#444444"
+                android:textSize="14dp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical" android:layout_marginTop="10dp"
+
+                android:text="주 재료"
+                android:textColor="#000000"
+                android:textSize="15dp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent" android:background="@drawable/border"
+                android:layout_height="wrap_content" android:id="@+id/joo" android:padding="10dp"
+                android:gravity="center_vertical"
+
+
+                android:textColor="#444444"
+                android:textSize="14dp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical" android:layout_marginTop="10dp"
+
+                android:text="재료"
+                android:textColor="#000000"
+                android:textSize="15dp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent" android:background="@drawable/border"
+                android:layout_height="wrap_content" android:id="@+id/jae" android:padding="10dp"
+                android:gravity="center_vertical"
+
+
+                android:textColor="#444444"
+                android:textSize="14dp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical" android:layout_marginTop="10dp"
+
+                android:text="난이도"
+                android:textColor="#000000"
+                android:textSize="15dp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent" android:background="@drawable/border"
+                android:layout_height="wrap_content" android:id="@+id/nan" android:padding="10dp"
+                android:gravity="center_vertical"
+
+
+                android:textColor="#444444"
+                android:textSize="14dp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical" android:layout_marginTop="10dp"
+
+                android:text="몇인분"
+                android:textColor="#000000"
+                android:textSize="15dp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent" android:background="@drawable/border"
+                android:layout_height="wrap_content" android:id="@+id/inbun" android:padding="10dp"
+                android:gravity="center_vertical"
+
+
+                android:textColor="#444444"
+                android:textSize="14dp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical" android:layout_marginTop="10dp"
+
+                android:text="소요시간"
+                android:textColor="#000000"
+                android:textSize="15dp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent" android:background="@drawable/border"
+                android:layout_height="wrap_content" android:id="@+id/times" android:padding="10dp"
+                android:gravity="center_vertical"
+
+
+                android:textColor="#444444"
+                android:textSize="14dp"></TextView>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp" android:layout_marginTop="30dp"
+                android:gravity="center_vertical"
+
+                android:text="*관련 레시피 영상"
+                android:textColor="#000000"
+                android:textSize="16dp"></TextView>
+
+            <ImageView
+                android:layout_width="match_parent"  android:layout_marginTop="6dp"
+                android:layout_height="1dp" android:background="#bdbdbd">
+
+            </ImageView>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recylerview" android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+
+
+
+
+
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

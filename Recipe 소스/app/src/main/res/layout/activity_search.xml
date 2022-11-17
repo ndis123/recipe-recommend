@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal"
+        android:paddingLeft="15dp"
+        android:paddingRight="15dp">
+
+        <Button
+            android:layout_width="20dp" android:id="@+id/back"
+            android:layout_height="20dp"
+            android:background="@drawable/back"></Button>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginRight="20dp"
+            android:gravity="center"
+            android:text="레시피 검색"
+            android:textColor="#ffffff"
+            android:textSize="20dp"></TextView>
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/recylerview"
+            android:layout_width="match_parent" android:layout_marginRight="15dp" android:layout_marginLeft="15dp" android:layout_marginTop="5dp"
+            android:layout_height="match_parent">
+
+        </androidx.recyclerview.widget.RecyclerView>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" android:id="@+id/no_data"
+            android:gravity="center" android:visibility="gone"
+
+            android:text="*재료에 맞는 레시피가 없습니다. 재료수를 줄여보세요!"
+            android:textColor="#888888"
+            android:textSize="13dp"></TextView>
+
+    </FrameLayout>
+
+
+</LinearLayout>

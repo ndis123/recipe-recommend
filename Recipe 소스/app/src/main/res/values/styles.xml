@@ -1,0 +1,42 @@
+<resources>
+
+
+
+
+    <style name="FullScreenTheme" parent="Theme.AppCompat.Light.NoActionBar">
+
+    </style>
+
+    <style name="NewDialog">
+        <item name="android:windowFrame">@null</item>
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:windowIsFloating">true</item>
+        <item name="android:windowContentOverlay">@null</item>
+        <item name="android:windowTitleStyle">@null</item>
+        <item name="android:windowAnimationStyle">@android:style/Animation.Dialog</item>
+        <item name="android:windowSoftInputMode">stateUnspecified|adjustPan</item>
+        <item name="android:background">@android:color/transparent</item>
+    </style>
+
+    <style name="Transparent" parent="@style/Theme.AppCompat.NoActionBar">
+        <!--Titlebar 없애는 옵션
+            true : Titlebar x
+            false : Titlebar o
+        -->
+
+        <!-- 투명정도를 나타내는 색-->
+        <item name="android:windowBackground">@android:color/transparent</item>
+        <item name="android:colorBackgroundCacheHint">@null</item>
+        <item name="android:windowIsTranslucent">true</item>
+
+        <!--
+        android:backgroundDimEnabled
+        true - 반투명 검정 /  false - 완전 투명
+        -->
+        <item name="android:backgroundDimEnabled">true</item>
+    </style>
+
+    <style name="BlueRipple">
+        <item name="colorControlHighlight">#0000ff</item>
+    </style>
+</resources>

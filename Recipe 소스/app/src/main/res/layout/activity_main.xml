@@ -1,0 +1,166 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+            android:text="@string/app_name"
+            android:textColor="#ffffff"
+            android:textSize="20dp"></TextView>
+    </LinearLayout>
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent" android:background="#f6f6f6"
+        android:layout_height="0dp" android:layout_weight="1">
+
+        <LinearLayout
+            android:layout_width="match_parent"    android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:layout_height="match_parent" android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp" android:layout_marginTop="15dp"
+                android:gravity="center_vertical"
+
+                android:text="*재료 입력 후 레시피를 검색해 보세요."
+                android:textColor="#000000"
+                android:textSize="16dp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical" android:layout_marginTop="15dp"
+
+                android:text="재료1"
+                android:textColor="#444444"
+                android:textSize="15dp"></TextView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp" android:inputType="text"
+                android:gravity="center_vertical" android:id="@+id/jae01"
+
+
+                android:textColor="#444444"
+                android:textSize="15dp"></EditText>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical" android:layout_marginTop="10dp"
+
+                android:text="재료2"
+                android:textColor="#444444"
+                android:textSize="15dp"></TextView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp" android:inputType="text"
+                android:gravity="center_vertical" android:id="@+id/jae02"
+
+
+                android:textColor="#444444"
+                android:textSize="15dp"></EditText>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical" android:layout_marginTop="10dp"
+
+                android:text="재료3"
+                android:textColor="#444444"
+                android:textSize="15dp"></TextView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp" android:inputType="text"
+                android:gravity="center_vertical" android:id="@+id/jae03"
+
+
+                android:textColor="#444444"
+                android:textSize="15dp"></EditText>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical" android:layout_marginTop="10dp"
+
+                android:text="재료4"
+                android:textColor="#444444"
+                android:textSize="15dp"></TextView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp" android:inputType="text"
+                android:gravity="center_vertical" android:id="@+id/jae04"
+
+
+                android:textColor="#444444"
+                android:textSize="15dp"></EditText>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp"
+                android:gravity="center_vertical" android:layout_marginTop="10dp"
+
+                android:text="재료5"
+                android:textColor="#444444"
+                android:textSize="15dp"></TextView>
+
+            <EditText
+                android:layout_width="match_parent"
+                android:layout_height="40dp" android:inputType="text"
+                android:gravity="center_vertical" android:id="@+id/jae05"
+
+
+                android:textColor="#444444"
+                android:textSize="15dp"></EditText>
+
+            <TextView
+                android:layout_width="match_parent" android:layout_marginTop="18dp"
+                android:layout_height="45dp" android:id="@+id/search_recipe"
+                android:gravity="center"
+                android:text="레시피 찾기!" android:background="@color/colorPrimary"
+                android:textColor="#ffffff"
+                android:textSize="16dp"></TextView>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="30dp" android:layout_marginTop="30dp"
+                android:gravity="center_vertical"
+
+                android:text="*인기 레시피"
+                android:textColor="#000000"
+                android:textSize="16dp"></TextView>
+
+            <ImageView
+                android:layout_width="match_parent"  android:layout_marginTop="6dp"
+                android:layout_height="1dp" android:background="#bdbdbd">
+
+            </ImageView>
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recylerview" android:layout_marginTop="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+
+</LinearLayout>

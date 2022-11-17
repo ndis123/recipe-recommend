@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/com_rowid"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+
+    android:gravity="center"
+    android:orientation="vertical"
+>
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card2"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="12dp"
+        app:cardElevation="3dp"
+        app:cardPreventCornerOverlap="false"
+        app:cardUseCompatPadding="true"
+        app:contentPadding="0dp">
+
+        <LinearLayout
+            android:id="@+id/com_rowid1" android:padding="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#ffffff"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="50dp"   android:id="@+id/image"
+                android:layout_height="50dp" android:scaleType="fitXY">
+
+            </ImageView>
+
+            <TextView
+                android:id="@+id/title" android:layout_marginLeft="10dp"
+                android:layout_width="0dp" android:layout_weight="1"
+                android:layout_height="50dp"
+
+                android:maxLines="2" android:ellipsize="end"
+                android:gravity="top"
+                android:marqueeRepeatLimit="marquee_forever"
+                android:textColor="#000000"
+                android:textSize="16dp">
+
+            </TextView>
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="5dp" ></ImageView>
+</LinearLayout>
